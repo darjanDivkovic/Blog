@@ -3,6 +3,10 @@
     font-family: 'Quicksand';
 }
 
+*:focus {
+    outline: none;
+}
+
 #header-container {
     position: relative;
     height: 40px;
@@ -35,10 +39,33 @@
     width: 360px;
     align-items: center;
     padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: appearRegister;
+    animation-duration: 3s;
+    
 }
 
-#register-box form label {
-    font-size: 20px;
+
+
+@keyframes appearRegister {
+    0% {
+        top: -40%;
+    }
+
+    50% {
+        top: 65%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+#register-box form #X-button-register {
+    width: 15%;
 }
 
 #register-box form input {
@@ -47,6 +74,13 @@
     margin: 10px;
     border: none;
     border-bottom: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    transition: 1s;
+}
+
+#register-box form input:focus {
+    width: 70%;
 }
 
 #register-box form button {

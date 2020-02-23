@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <title>Blog</title>
@@ -16,7 +17,11 @@
     
     <div id="register-box">
        <form action="http://www.rebol.com/cgi-bin/test-cgi.cgi">
+        
+            <button type="button" id="X-button-register">X</button>
+            <h1>Register</h1>
             
+            <br>
             <input type="text" value="" name="name" placeholder="name">
             
             <input type="text" value="" name="name" placeholder="surname">
@@ -28,8 +33,11 @@
             <input type="text" value="" name="name" placeholder="confirm password">
            
             <input type="text" value="" name="name" placeholder="email">
+            <br>
             <button type="submit">SUBMIT</button>
        </form> 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
