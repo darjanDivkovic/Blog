@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    font-family: 'Quicksand';
+}
+
+#header-container {
+    position: relative;
+    height: 40px;
+}
+
+#header-container button {
+    background-color: white;
+    border: none;
+    color:black;
+    font-size: 30px;
+    padding: 10px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#header-container button:hover {
+    background-color: black;
+    color : white;
+}
+
