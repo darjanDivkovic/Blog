@@ -101,3 +101,56 @@
     background-color: black;
     color : white;
 }
+
+#login-box form {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: appearRegister;
+    animation-duration: 3s;
+}
+
+#login-box form #X-button-login {
+    width: 15%;
+}
+
+#login-box form input {
+    width: 60%;
+    height: 20px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    transition: 1s;
+}
+
+#login-box form input:focus {
+    width: 70%;
+}
+
+#login-box form button {
+    background-color: white;
+    border: none;
+    color:black;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 40%;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+#login-box form button:hover {
+    background-color: black;
+    color : white;
+}
