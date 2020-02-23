@@ -19,6 +19,8 @@
     margin-right: 20px;
     transition: 0.5s;
     cursor: pointer;
+    border-radius: 8px;
+    font-weight: bolder;
 }
 
 #header-container button:hover {
@@ -26,3 +28,42 @@
     color : white;
 }
 
+#register-box form {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    align-items: center;
+    padding: 15px;
+}
+
+#register-box form label {
+    font-size: 20px;
+}
+
+#register-box form input {
+    width: 60%;
+    height: 20px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+#register-box form button {
+    background-color: white;
+    border: none;
+    color:black;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 40%;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+#register-box form button:hover {
+    background-color: black;
+    color : white;
+}
