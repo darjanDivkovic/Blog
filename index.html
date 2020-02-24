@@ -21,19 +21,19 @@
             <h1>Register</h1>
             
             <br>
-            <input type="text" value="" name="name" placeholder="name">
+            <input type="text" name="name" placeholder="name">
             
-            <input type="text" value="" name="name" placeholder="surname">
+            <input type="text" name="surnamename" placeholder="surname">
             
-            <input type="text" value="" name="name" placeholder="username">
+            <input type="text" name="username" placeholder="username">
            
-            <input type="text" value="" name="name" placeholder="password">
+            <input type="password" name="password" placeholder="password">
             
-            <input type="text" value="" name="name" placeholder="confirm password">
+            <input type="password" name="passwordConfirm" placeholder="confirm password">
            
-            <input type="text" value="" name="name" placeholder="email">
+            <input type="email" name="email" placeholder="email">
             <br>
-            <button type="submit">SUBMIT</button>
+            <button type="submit" onclick="return verifyRegister();">SUBMIT</button>
        </form> 
     </div>
     <div id="login-box">
@@ -53,6 +53,7 @@
 
     </div>
     <script src="script.js"></script>
-    <script src="verify.js"></script>
+    <script src="verifyLogin.js"></script>
+    <script src="verifyRegister.js"></script>
 </body>
 </html>

@@ -2,6 +2,8 @@ function verifyLogIn(){
     
     let usernameInput = document.getElementById('username-input');
     let passwordInput = document.getElementById('password-input');
+    let usernameInputFilled = false;
+    let passwordInputFilled = false;
 
     if(usernameInput.value === ''){
         
@@ -12,7 +14,8 @@ function verifyLogIn(){
             usernameInput.style.borderBottom = "2px solid black";
             usernameInput.placeholder = "username";    
         }, 3000);
-    };
+    }
+    else usernameInputFilled = true;
 
     if(passwordInput.value === ''){
         passwordInput.style.borderBottom = "2px solid red";
@@ -23,9 +26,12 @@ function verifyLogIn(){
             passwordInput.placeholder = "password";    
         }, 3000);
 
-    };
+    }
+    else passwordInputFilled = true;
 
-    return false;
+    if(!usernameInputFilled || !passwordInputFilled){
+        return false;
+    }
+    else return true;
     
-
 }

@@ -1,0 +1,3 @@
+function verifyRegister(){
+    return false;
+};

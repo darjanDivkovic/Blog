@@ -130,7 +130,7 @@
     border-bottom: 2px solid black;
     justify-content: center;
     text-align: center;
-    transition: 1s;
+    transition: 2s;
 }
 
 #login-box form input:focus {
