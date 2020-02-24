@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-
     <title>Blog</title>
 </head>
 <body>
@@ -44,15 +43,16 @@
 
         <h1>Log in</h1>
         <br>
-        <input type="text" name="username" placeholder="username">
+        <input type="text" name="username" id="username-input" placeholder="username">
         <br>
-        <input type="text" name="password" placeholder="password">
+        <input type="password" name="password" id="password-input" placeholder="password">
         <br>
-        <button type="submit">Log in</button>
+        <button type="submit" onclick="return verifyLogIn();">Log in</button>
         
         </form>
 
     </div>
     <script src="script.js"></script>
+    <script src="verify.js"></script>
 </body>
 </html>

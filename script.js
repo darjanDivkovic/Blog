@@ -11,10 +11,6 @@ $(document).ready(()=> {
 
     });
 
-   
-
-    
-
     $('#log-in-button').click(()=> {
 
         $('#login-box').show();
