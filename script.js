@@ -25,5 +25,5 @@ $(document).ready(()=> {
     $('#X-button-login').click(()=> {
         $('#login-box').hide();
     });
-    
+
 });

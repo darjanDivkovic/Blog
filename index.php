@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,14 +51,24 @@
 
     </div>
 
-    <div id="message">
-        <?php
-
-
-        ?>
+    <div id="message-container">
+        <h1 id="message">
+            <?php
+                if(isset($_SESSION['message'])){
+                    echo $_SESSION['message'];
+                 };
+                session_unset();
+           ?>
+        </h1>
     </div>
+
+
     <script src="script.js"></script>
     <script src="verifyLogin.js"></script>
     <script src="verifyRegister.js"></script>
 </body>
 </html>
+
+<!-- 
+
+ -->

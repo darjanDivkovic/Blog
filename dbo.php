@@ -1,9 +1,9 @@
 <?php
 
-$host = '127.0.0.1:3307';
-$db = 'Blog';
+$host = '127.0.0.1:3308';
+$db = 'blog';
 $user = 'root';
-$pass = 'darjan1234';
+$pass = '';
 
 try {
     $conn = new PDO("mysql:host=$host;dbname=$db", $user, $pass);

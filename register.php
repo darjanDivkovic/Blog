@@ -1,5 +1,6 @@
 <?php
 
+
     require 'dbo.php';
 
     $name = $_POST['name'];
