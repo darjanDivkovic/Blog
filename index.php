@@ -46,6 +46,13 @@
         </form>
 
     </div>
+
+    <div id="message">
+        <?php
+
+
+        ?>
+    </div>
     <script src="script.js"></script>
     <script src="verifyLogin.js"></script>
     <script src="verifyRegister.js"></script>
