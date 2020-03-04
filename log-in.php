@@ -19,6 +19,11 @@
             echo $username;
             echo "'s password is correct!";
             // Check if user is Admin
+            $isAdmin = $conn->query("SELECT IsAdmin FROM users WHERE Username = '$username'")->fetch();
+            if($isAdmin['IsAdmin'] == 1){
+                // Go to Admin Homepage
+                
+            }
             // If Admin go to Admin homepage
             // If User go to User homepage
         }

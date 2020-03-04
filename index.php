@@ -45,23 +45,23 @@
         <br>
         <input type="password" name="password" id="password-input" placeholder="password">
         <br>
-        <button type="submit" onclick="return verifyLogIn();">Log in</button>
+        <button type="submit" id="button-login" onclick="return verifyLogIn();">Log in</button>
         
         </form>
 
     </div>
 
     <div id="message-container">
-        <h1 id="message">
+        <p id="message">
+            aa
             <?php
                 if(isset($_SESSION['message'])){
                     echo $_SESSION['message'];
                  };
                 session_unset();
            ?>
-        </h1>
+        </p>
     </div>
-
 
     <script src="script.js"></script>
     <script src="verifyLogin.js"></script>

@@ -159,7 +159,31 @@
 
 
 #message-container {
-    border: 2px solid black;
+    
     padding: 10px;
-  
+    animation: popUp 8s linear;
+    margin-left: -50%;
+    margin-top: 300px;
+    
+}
+
+#message-container #message {
+    font-size: 24px;
+    font-weight: bold;
+    color:black;
+
+}
+
+@keyframes popUp {
+    0% {
+        margin-left: -20%;
+    }
+
+    50% {
+        margin-left: 5%;
+    }
+
+    100% {
+        margin-left: -20%;
+    }
 }
