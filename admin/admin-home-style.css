@@ -8,16 +8,18 @@ body {
     border: 2px solid black;
     width: 100%;
     display: flex;
-    margin-left: 58%;
+    margin-top: 30px;
 }
 
 #welcome {
     font-size: 18px; 
-    padding-right: 20px;
+    padding-right: 50px;
+    margin-left: 50px;
 }
 
 #status {
     font-size: 18px;
+    padding-right: 50px;
 }
 
 #welcome span, #status span {
@@ -29,15 +31,16 @@ body {
     background-color: white;
     border: none;
     color:black;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
-    float: right;
-    
     transition: 0.5s;
     cursor: pointer;
     border-radius: 8px;
     font-weight: bolder;
     outline:0;
+    margin-left: auto;
+    margin-right: 5px;
+
 }
 
 #changePassword:hover{
