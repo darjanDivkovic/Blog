@@ -1,0 +1,14 @@
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Quicksand';
+}
+
+#welcome {
+    font-size: 18px;
+    float: right;
+}
+
+#welcome #logged-username {
+    font-size: 30px;
+}
