@@ -12,7 +12,12 @@
     <title>Admin Homepage</title>
 </head>
 <body>
-    <h1 id="welcome">Welcome  <span id="logged-username"><?php echo $_SESSION['username']; ?></span></h1>
+    <div id="status-bar">
+        <h1 id="welcome">Welcome  <span><?php echo $_SESSION['username']; ?></span></h1>
+        
+        <h1 id="status">status <span>Admin</span></h1>
+    </div>
     
+    <button id="changePassword">change password</button>
 </body>
 </html>

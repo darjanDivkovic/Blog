@@ -4,11 +4,26 @@ body {
      font-family: 'Quicksand';
 }
 
-#welcome {
-    font-size: 18px;
-    float: right;
+#status-bar {
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    margin-left: 75%;
 }
 
-#welcome #logged-username {
+#welcome {
+    font-size: 18px; 
+    padding-right: 20px;
+}
+
+#status {
+    font-size: 18px;
+}
+
+#welcome span, #status span {
     font-size: 30px;
+}
+
+#changePassword {
+    float: right;
 }
