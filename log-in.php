@@ -22,7 +22,8 @@
             $isAdmin = $conn->query("SELECT IsAdmin FROM users WHERE Username = '$username'")->fetch();
             if($isAdmin['IsAdmin'] == 1){
                 // Go to Admin Homepage
-                
+                $_SESSION['username'] = $username;
+                header('Location: ./admin/admin-home.php');
             }
             // If Admin go to Admin homepage
             // If User go to User homepage
