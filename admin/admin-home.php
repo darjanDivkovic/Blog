@@ -18,6 +18,21 @@
         <button id="changePassword">change password</button>
     </div>
 
-    
+    <div id="change-password-box">
+        <form action="http://www.rebol.com/cgi-bin/test-cgi.cgi" method="POST">
+        <button type="button" id="X-button-changePassword">X</button>
+        <h1>Change Password</h1>
+        <input type="text" name="oldPassword" placeholder="old password">
+        <br>
+        <input type="text" name="newPassword" placeholder="new password">
+        <br>
+        <input type="text" name="retypeNewPassword" placeholder="retype password">
+        <br>
+        <button type="submit">Change</button>
+        </form>
+    </div>
+
+
+    <script src="./admin-script.js"></script>
 </body>
 </html>
