@@ -16,24 +16,25 @@
     <div id="status-bar">
         <h1 id="welcome">Welcome  <span><?php echo $_SESSION['username']; ?></span></h1>
         <h1 id="status">status <span>Admin</span></h1>
-        <button id="changePassword">change password</button>
+        <button id="changePassword">CHANGE PASSWORD</button>
     </div>
 
     <div id="change-password-box">
         <form action="http://www.rebol.com/cgi-bin/test-cgi.cgi" method="POST">
         <button type="button" id="X-button-changePassword">X</button>
         <h1>Change Password</h1>
-        <input type="text" name="oldPassword" placeholder="old password">
+        <input type="text" name="oldPassword" id="oldPassword" placeholder="old password">
         <br>
-        <input type="text" name="newPassword" placeholder="new password">
+        <input type="text" name="newPassword" id="newPassword" placeholder="new password">
         <br>
-        <input type="text" name="retypeNewPassword" placeholder="retype password">
+        <input type="text" name="retypeNewPassword" id="retypeNewPassword" placeholder="retype password">
         <br>
-        <button type="submit">Change</button>
+        <button type="submit" onclick="return verify();">Change</button>
         </form>
     </div>
 
 
     <script src="./admin-script.js"></script>
+    <script src="./admin-verify.js"></script>
 </body>
 </html>
