@@ -50,18 +50,17 @@
         </form>
 
     </div>
-
-    <div id="message-container">
-        <p id="message">
-            aa
+    <br>
+    <br> 
+    <h1 id="message">
             <?php
                 if(isset($_SESSION['message'])){
                     echo $_SESSION['message'];
                  };
                 session_unset();
            ?>
-        </p>
-    </div>
+    </h1>
+
 
     <script src="script.js"></script>
     <script src="verifyLogin.js"></script>

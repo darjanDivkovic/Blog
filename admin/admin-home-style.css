@@ -117,3 +117,20 @@ body {
         top: 50%;
     }
 }
+
+#returnMessage {
+    text-align: center;
+    animation-name: dissapear;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dissapear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

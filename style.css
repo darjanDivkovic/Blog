@@ -157,33 +157,19 @@
     color: white;
 }
 
-
-#message-container {
-    
-    padding: 10px;
-    animation: popUp 8s linear;
-    margin-left: -50%;
-    margin-top: 300px;
-    
+#message {
+    text-align: center;
+    animation-name: dissapear;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
-#message-container #message {
-    font-size: 24px;
-    font-weight: bold;
-    color:black;
-
-}
-
-@keyframes popUp {
+@keyframes dissapear {
     0% {
-        margin-left: -20%;
-    }
-
-    50% {
-        margin-left: 5%;
+        opacity: 1;
     }
 
     100% {
-        margin-left: -20%;
+        opacity: 0;
     }
 }

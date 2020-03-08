@@ -11,7 +11,7 @@
 
     if(empty($result)){
         echo 'No users with this username';
-        $_SESSION['message'] = "No users with this username $username";
+        $_SESSION['message'] = "No users with username | $username |";
         header('Location: index.php');
     }
     else {

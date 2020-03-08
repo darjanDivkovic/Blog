@@ -33,7 +33,7 @@
         </form>
     </div>
 
-    <h1>
+    <h1 id="returnMessage">
     <?php
         if(isset($_SESSION['returnMessage'])){
                     echo $_SESSION['returnMessage'];

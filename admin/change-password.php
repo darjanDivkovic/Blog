@@ -23,7 +23,7 @@ if($oldPassword == $currentPassword[0]){
 }
 else
 {
-    $_SESSION['returnMessage'] = "The current password is not correct!";
+    $_SESSION['returnMessage'] = "The password your typed in is not correct!";
     header('Location: ./admin-home.php');
 }
 
