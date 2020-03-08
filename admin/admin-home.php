@@ -20,19 +20,27 @@
     </div>
 
     <div id="change-password-box">
-        <form action="http://www.rebol.com/cgi-bin/test-cgi.cgi" method="POST">
+        <form action="./change-password.php" method="POST">
         <button type="button" id="X-button-changePassword">X</button>
         <h1>Change Password</h1>
-        <input type="text" name="oldPassword" id="oldPassword" placeholder="old password">
+        <input type="password" name="oldPassword" id="oldPassword" placeholder="old password">
         <br>
-        <input type="text" name="newPassword" id="newPassword" placeholder="new password">
+        <input type="password" name="newPassword" id="newPassword" placeholder="new password">
         <br>
-        <input type="text" name="retypeNewPassword" id="retypeNewPassword" placeholder="retype password">
+        <input type="password" name="retypeNewPassword" id="retypeNewPassword" placeholder="retype password">
         <br>
         <button type="submit" onclick="return verify();">Change</button>
         </form>
     </div>
 
+    <h1>
+    <?php
+        if(isset($_SESSION['returnMessage'])){
+                    echo $_SESSION['returnMessage'];
+                 };
+                
+    ?>
+    </h1>
 
     <script src="./admin-script.js"></script>
     <script src="./admin-verify.js"></script>
