@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+
+#status-bar {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+#welcome {
+    font-size: 18px; 
+    padding-right: 50px;
+    margin-left: 50px;
+}
+
+#status {
+    font-size: 18px;
+    padding-right: 50px;
+}
+
+#welcome span, #status span {
+    font-size: 30px;
+}

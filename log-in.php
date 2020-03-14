@@ -24,9 +24,12 @@
                 // Go to Admin Homepage
                 $_SESSION['username'] = $username;
                 header('Location: ./admin/admin-home.php');
+            }else{
+                // If User go to User homepage
+                $_SESSION['username'] = $username;
+                header('Location: ./user/user-home.php');
             }
-            // If Admin go to Admin homepage
-            // If User go to User homepage
+           
         }
         else {
             echo $username;
