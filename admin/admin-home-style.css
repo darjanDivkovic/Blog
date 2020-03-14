@@ -25,34 +25,37 @@ body {
     font-size: 30px;
 }
 
-#options {
-
+#sidebar {
+    position: absolute;
     width: 300px;
-    float: right;
-    height: 200px;
+    height: 100%;
+    background: #000;
+    
+}
+
+#sidebar ul {
+    list-style-type: none;
 }
 
 .options-button {
    
     font-family: 'Quicksand';
-    background-color: white;
+    background-color: black;
     border: none;
-    color:black;
+    color:white;
     font-size: 24px;
     padding: 20px;
     transition: 0.5s;
     cursor: pointer;
     border-radius: 8px;
     outline:0;
-    margin-left: auto;
-    margin-right: 15px;
     width: 100%;
 
 }
 
 .options-button:hover{
-    background-color: black;
-    color : white;
+    background-color: white;
+    color : black;
 }
 
 #change-password-box form {

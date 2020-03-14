@@ -50,5 +50,8 @@ session_start();
                 
     ?>
     </h1>
+
+    <script src="./user-script.js"></script>
+    <script src="./user-verify.js"></script>
 </body>
 </html>

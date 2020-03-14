@@ -19,12 +19,25 @@
         
     </div>
 
-    <div id="options">
-        <button class="options-button" id="changePassword">Change Password</button>
-        <form action="./log-out.php" method="get">
-        <button type="submit" class="options-button">Log out</button>
-        </form>
+    <div id="sidebar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <ul>
+            <li> 
+                <button class="options-button" id="changePassword">Change Password</button>
+            </li>
+            <li> 
+                <form action="./log-out.php" method="get">
+                <button type="submit" class="options-button">Log out</button>
+                </form>
+            </li>
+        </ul>
     </div>
+   
     
 
     <div id="change-password-box">
