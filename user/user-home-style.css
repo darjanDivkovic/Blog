@@ -24,3 +24,121 @@ body {
 #welcome span, #status span {
     font-size: 30px;
 }
+
+#options {
+
+    width: 300px;
+    float: right;
+    height: 200px;
+}
+
+.options-button {
+   
+    font-family: 'Quicksand';
+    background-color: white;
+    border: none;
+    color:black;
+    font-size: 24px;
+    padding: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 8px;
+    outline:0;
+    margin-left: auto;
+    margin-right: 15px;
+    width: 100%;
+
+}
+
+.options-button:hover{
+    background-color: black;
+    color : white;
+}
+
+#change-password-box form {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    align-items: center;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: appearChangePassword;
+    animation-duration: 3s;
+}
+
+#change-password-box form #X-button-changePassword {
+    width: 15%;
+    outline:0;
+}
+
+#change-password-box form input {
+    outline:0;
+    width: 60%;
+    height: 20px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    transition: 2s;
+}
+
+#change-password-box form input:focus {
+    width: 70%;
+    border-color: black;
+}
+
+#change-password-box form button {
+    background-color: white;
+    border: none;
+    color:black;
+    outline:0;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 40%;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+#change-password-box form button:hover {
+    background-color: black;
+    color: white;
+}
+
+@keyframes appearChangePassword {
+    0% {
+        top: -40%;
+    }
+
+    50% {
+        top: 65%;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+#returnMessage {
+    text-align: center;
+    animation-name: dissapear;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dissapear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

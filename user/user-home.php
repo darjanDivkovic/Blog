@@ -27,5 +27,28 @@ session_start();
         <button type="submit" class="options-button">Log out</button>
         </form>
     </div>
+
+    <div id="change-password-box">
+        <form action="./change-password.php" method="POST">
+        <button type="button" id="X-button-changePassword">X</button>
+        <h1>Change Password</h1>
+        <input type="password" name="oldPassword" id="oldPassword" placeholder="old password">
+        <br>
+        <input type="password" name="newPassword" id="newPassword" placeholder="new password">
+        <br>
+        <input type="password" name="retypeNewPassword" id="retypeNewPassword" placeholder="retype password">
+        <br>
+        <button type="submit" onclick="return verify();">Change</button>
+        </form>
+    </div>
+
+    <h1 id="returnMessage">
+    <?php
+        if(isset($_SESSION['returnMessage'])){
+                    echo $_SESSION['returnMessage'];
+                 };
+                
+    ?>
+    </h1>
 </body>
 </html>
