@@ -11,4 +11,12 @@ $(document).ready(()=> {
         $('#change-password-box').hide();
     })
     
+    $('#toggle-btn').click(()=> {
+        if($('#sidebar').css('right') === '-300px'){
+            $('#sidebar').css('right', '0px');   
+        }
+        else {
+            $('#sidebar').css('right', '-300px'); 
+        }
+    })
 });

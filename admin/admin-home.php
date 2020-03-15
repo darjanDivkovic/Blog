@@ -20,12 +20,13 @@
     </div>
 
     <div id="sidebar">
-        <div class="toggle-btn">
+        <div id="toggle-btn" class="toggle-btn">
             <span></span>
             <span></span>
             <span></span>
         </div>
         
+        <h1>Options</h1>
         <ul>
             <li> 
                 <button class="options-button" id="changePassword">Change Password</button>
