@@ -14,14 +14,14 @@ hr.onload = function() {
 }
 
 
-
 function createCards(data){
 
     let jobsCount = Object.keys(data).length;
-    console.log(jobsCount);
+    
 
-    for(let i = 0 ; i < 2 ; i++){
+    for(let i = 1 ; i <= jobsCount ; i++){
 
+        
 
         let jobCard = document.createElement('div');
         jobCard.className = 'job-card';
@@ -39,13 +39,13 @@ function createCards(data){
         heading1.className = 'heading';
         heading1.innerText = 'Job Description';
         let heading1Para = document.createElement('p');
-        heading1Para.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. it debitis odit consectetur maiores ut ab officiis nam quibusdam error consequatur.';
+        heading1Para.innerText = data[i].description;
         
         let descriptionWrapperLower = document.createElement('div');
         descriptionWrapperLower.className = 'descripiton-wrapper-lower';
         
         let headerArray = ['Location','Salary','Time'];
-        let valuesArray = ['Tuzla','100km','45min'];
+        let valuesArray = [data[i].location,data[i].salary,data[i].time];
         
         for(let i = 0 ; i < 3 ; i++){
             let div = document.createElement('div');
