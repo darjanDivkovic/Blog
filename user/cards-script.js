@@ -22,15 +22,15 @@ function createCards(data){
     
 
     let jobsCount = Object.keys(data).length;
-    
+    let delay = 1;
 
     for(let i = 0 ; i < jobsCount ; i++){
 
         console.log(data[i]);
 
         let jobCard = document.createElement('div');
-        jobCard.className = 'job-card';
-        
+        jobCard.className = 'job-card';        
+
         let img = document.createElement('img');
         img.src = 'money-sign.png';
         img.id = 'dolar';
