@@ -12,7 +12,7 @@ try {
      die("Could not establish connection ".$pe->getMessage());
     }
 
-$data = $conn->query('SELECT * FROM jobs')->fetchAll(PDO::FETCH_UNIQUE);
+$data = $conn->query('SELECT * FROM jobs')->fetchAll(PDO::FETCH_ASSOC);
 
 echo json_encode($data);
 

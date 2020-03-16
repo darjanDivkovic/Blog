@@ -9,19 +9,24 @@ hr.onload = function() {
     if(hr.status === 200){
         let response = hr.response;
         let data = JSON.parse(response);
+        
+        console.log(data);
         createCards(data);
+
+        
     }
 }
 
 
 function createCards(data){
+    
 
     let jobsCount = Object.keys(data).length;
     
 
-    for(let i = 1 ; i <= jobsCount ; i++){
+    for(let i = 0 ; i < jobsCount ; i++){
 
-        
+        console.log(data[i]);
 
         let jobCard = document.createElement('div');
         jobCard.className = 'job-card';
