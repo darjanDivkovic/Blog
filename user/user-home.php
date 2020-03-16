@@ -41,7 +41,9 @@ session_start();
         </ul>
     </div>
 
-    
+    <div id="cards">
+   
+    </div>
 
     <div id="change-password-box">
         <form action="./change-password.php" method="POST">
@@ -68,5 +70,6 @@ session_start();
 
     <script src="./user-script.js"></script>
     <script src="./user-verify.js"></script>
+    <script src="./cards-script.js"></script>
 </body>
 </html>
