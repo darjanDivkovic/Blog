@@ -15,6 +15,9 @@ session_start();
     <title>User Homepage</title>
 </head>
 <body>
+
+    <div id="background-wrapper">
+
     <div id="status-bar">
         <h1 id="welcome">Welcome  <span><?php echo $_SESSION['username']; ?></span></h1>
         <h1 id="status">status <span>User</span></h1>
@@ -44,6 +47,10 @@ session_start();
     <div id="cards">
    
     </div>
+
+    </div>
+
+    
 
     <div id="change-password-box">
         <form action="./change-password.php" method="POST">

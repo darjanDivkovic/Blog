@@ -34,7 +34,7 @@ body {
     padding: 0;
     left: auto;
     right: -300px;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 #sidebar h1 {
@@ -123,6 +123,7 @@ body {
     justify-content: center;
     text-align: center;
     transition: 2s;
+    background-color: none;
 }
 
 #change-password-box form input:focus {
@@ -256,10 +257,11 @@ body {
 }
 
 #cards {
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     animation: linear 2s displayElements;
+    transition: 1s;
 }
 
 @keyframes displayElements {
