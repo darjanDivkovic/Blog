@@ -36,6 +36,13 @@ function createCards(data){
         img.id = 'dolar';
         
         jobCard.appendChild(img);
+
+        let xButton = document.createElement('button');
+        xButton.innerText = 'X';
+        xButton.className = 'xButton';
+
+     
+        jobCard.appendChild(xButton);
         
         let descriptionWrapperUpper = document.createElement('div');
         descriptionWrapperUpper.className = 'descripiton-wrapper-upper';
@@ -67,6 +74,7 @@ function createCards(data){
         }
         
         let button = document.createElement('button');
+        button.addEventListener('click', checkOutJob);
         button.className = 'more';
         button.innerText = 'Check out';
         
@@ -84,6 +92,5 @@ function createCards(data){
 
 }
 
-
-
 };
+

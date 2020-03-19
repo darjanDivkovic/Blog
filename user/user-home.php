@@ -48,6 +48,10 @@ session_start();
    
     </div>
 
+    <div id="job-container">
+        <button id="X-job-container">X</button>
+    </div>
+
     </div>
 
     
@@ -78,5 +82,6 @@ session_start();
     <script src="./user-script.js"></script>
     <script src="./user-verify.js"></script>
     <script src="./cards-script.js"></script>
+    <script src="./checkout-job.js"></script>
 </body>
 </html>
