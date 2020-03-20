@@ -34,7 +34,7 @@ body {
     padding: 0;
     left: auto;
     right: -300px;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #sidebar h1 {
@@ -196,6 +196,7 @@ body {
     flex-direction: column;
     align-items: center;
     box-shadow: -7px 10px 26px 0px rgba(0,0,0,0.7);
+
 }
 
 #dolar {
@@ -288,7 +289,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     animation: linear 2s displayElements;
-    transition: 1s;
+    transition: 0.5s;
     opacity: 1;
 }
 
