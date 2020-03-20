@@ -1,4 +1,4 @@
-function checkOutJob(){
+function checkOutJob(evt){
     
     // Hide job cards
     hideJobCards();
@@ -7,6 +7,10 @@ function checkOutJob(){
     setTimeout(showJobContainer, 1000);
 
     // get job-container
+    document.getElementById('description').innerText = evt.currentTarget.description;
+    document.getElementById('location').innerText = evt.currentTarget.location;
+    document.getElementById('salary').innerText = evt.currentTarget.salary;
+    document.getElementById('time').innerText = evt.currentTarget.time;
     
     
 }

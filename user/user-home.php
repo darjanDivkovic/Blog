@@ -62,33 +62,18 @@ session_start();
             <div id="inner-details-wrapper">
             <div id="firstAboutBox">
                 <h2>Job Description</h2>
-                <p>
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                <p id="description"></p>
                 
             </div>    
        
             <div id="secondAboutBox">
                 <div id="shortInfoWrapper">
                 <h2>Location:</h2>
-                <p>Tuzla</p>
+                <p id="location"></p>
                 <h2>Salary:</h2>
-                <p>120km</p>
+                <p id="salary"></p>
                 <h2>Time:</h2>
-                <p>45min</p>
+                <p id="time"></p>
                 </div>
                 
                 <button id="applyButton">Apply</button>
