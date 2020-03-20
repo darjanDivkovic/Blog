@@ -1,0 +1,130 @@
+#job-container {
+    font-family: 'Quicksand';
+    top: 120px;
+    left: 45px;
+    right: 35px;
+    position: absolute;
+    border: 6px solid black;
+    border-radius: 24px;
+    width: 90%;
+    height: 500px;
+    animation: linear displayElements 2s;
+    transition: 0.5s;
+}
+
+#X-job-container {
+
+    transition: 0.5s;
+    font-family: 'Quicksand';
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    left: auto;
+    right: 20px;
+    height: 40px;
+    width: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+#X-job-container:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+#boxesWraper {
+    height: 600px;
+    width: 90%;
+    display: flex;
+}
+
+#map {
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 450px;
+    width: 40%;
+    border: 5px solid black;
+    border-radius: 24px;
+}
+
+#inner-details-wrapper {
+    margin-left: 80px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+#firstAboutBox, #secondAboutBox {
+    border-radius: 24px;
+    height: 400px;
+    width: 100%;
+}
+
+#firstAboutBox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#firstAboutBox h2 {
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;    
+}
+
+#firstAboutBox p {
+    font-size: 15px;
+}
+
+#secondAboutBox {
+   line-height: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#shortInfoWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#shortInfoWrapper h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 15px;  
+}
+
+#shortInfoWrapper p {
+    font-size: 24px;
+    margin-right: 50px;
+}
+
+#applyButton {
+    margin-top: 35px;
+    font-family: 'Quicksand';
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+#applyButton:hover {
+
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+}

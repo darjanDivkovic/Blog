@@ -11,7 +11,10 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <link rel="stylesheet" href="./user-style/user-home-style.css">
+    <link rel="stylesheet" href="./user-style/job-container-style.css">
     <title>User Homepage</title>
 </head>
 <body>
@@ -49,7 +52,49 @@ session_start();
     </div>
 
     <div id="job-container">
-        <button id="X-job-container">X</button>
+    <button id="X-job-container">X</button>
+        
+        <div id="boxesWraper">
+            <div id="map">
+
+            </div>
+    
+            <div id="inner-details-wrapper">
+            <div id="firstAboutBox">
+                <h2>Job Description</h2>
+                <p>
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Lrem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                
+            </div>    
+       
+            <div id="secondAboutBox">
+                <div id="shortInfoWrapper">
+                <h2>Location:</h2>
+                <p>Tuzla</p>
+                <h2>Salary:</h2>
+                <p>120km</p>
+                <h2>Time:</h2>
+                <p>45min</p>
+                </div>
+                
+                <button id="applyButton">Apply</button>
+            </div>
+            </div>  
+        </div>
     </div>
 
     </div>
@@ -83,5 +128,6 @@ session_start();
     <script src="./user-scripts/user-verify.js"></script>
     <script src="./user-scripts/cards-script.js"></script>
     <script src="./user-scripts/checkout-job.js"></script>
+    <script src="./user-scripts/map-script.js"></script>
 </body>
 </html>
