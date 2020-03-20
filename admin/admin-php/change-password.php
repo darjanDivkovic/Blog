@@ -2,7 +2,7 @@
 
 session_start();
 
-require 'dbo.php';
+require '../../dbo.php';
 
 $username = $_SESSION['username'];
 
@@ -18,13 +18,13 @@ if($oldPassword == $currentPassword[0]){
     $stmt = $conn->prepare($sql);
     $stmt->execute([$newPassword, $username]);
     $_SESSION['returnMessage'] = 'Password change Succesfull!';
-    header('Location: ./admin-home.php'); 
+    header('Location: ../admin-home.php'); 
 
 }
 else
 {
     $_SESSION['returnMessage'] = "The password your typed in is not correct!";
-    header('Location: ./admin-home.php');
+    header('Location: ../admin-home.php');
 }
 
 ?>

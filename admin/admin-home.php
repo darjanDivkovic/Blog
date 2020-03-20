@@ -32,7 +32,7 @@
                 <button class="options-button" id="changePassword">Change Password</button>
             </li>
             <li> 
-                <form action="./log-out.php" method="get">
+                <form action="./admin-php/log-out.php" method="get">
                 <button type="submit" class="options-button">Log out</button>
                 </form>
             </li>
@@ -42,7 +42,7 @@
     
 
     <div id="change-password-box">
-        <form action="./change-password.php" method="POST">
+        <form action="./admin-php/change-password.php" method="POST">
         <button type="button" id="X-button-changePassword">X</button>
         <h1>Change Password</h1>
         <input type="password" name="oldPassword" id="oldPassword" placeholder="old password">
