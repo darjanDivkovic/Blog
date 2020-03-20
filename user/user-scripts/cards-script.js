@@ -25,7 +25,7 @@ function createCards(data){
 
     for(let i = 0 ; i < jobsCount ; i++){
 
-        console.log(data[i]);
+        
 
         let jobCard = document.createElement('div');
         jobCard.className = 'job-card';        
