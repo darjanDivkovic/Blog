@@ -2,7 +2,7 @@ let cardsContainer = document.getElementById('cards');
 
 let hr = new XMLHttpRequest();
 
-hr.open('GET', 'cards.php', true);
+hr.open('GET', './user-php/cards.php', true);
 hr.send();
 
 hr.onload = function() {
@@ -31,7 +31,7 @@ function createCards(data){
         jobCard.className = 'job-card';        
 
         let img = document.createElement('img');
-        img.src = '../user-res/money-sign.png';
+        img.src = './user-res/money-sign.png';
         img.id = 'dolar';
         
         jobCard.appendChild(img);

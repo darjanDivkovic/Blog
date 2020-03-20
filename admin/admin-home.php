@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./admin-home-style.css">
+    <link rel="stylesheet" href="./admin-style/admin-home-style.css">
     <title>Admin Homepage</title>
 </head>
 <body>
@@ -64,7 +64,8 @@
     ?>
     </h1>
 
-    <script src="./admin-script.js"></script>
-    <script src="./admin-verify.js"></script>
+    <script src="./admin-scripts/admin-script.js"></script>
+    <script src="./admin-scripts/admin-verify.js"></script>
+    
 </body>
 </html>
