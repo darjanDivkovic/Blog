@@ -10,10 +10,9 @@ hr.onload = function() {
         let response = hr.response;
         let data = JSON.parse(response);
         
-        console.log(data);
         createCards(data);
 
-        
+
     }
 }
 
@@ -32,7 +31,7 @@ function createCards(data){
         jobCard.className = 'job-card';        
 
         let img = document.createElement('img');
-        img.src = 'money-sign.png';
+        img.src = '../user-res/money-sign.png';
         img.id = 'dolar';
         
         jobCard.appendChild(img);

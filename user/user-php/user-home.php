@@ -11,7 +11,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./user-home-style.css">
+    <link rel="stylesheet" href="../user-style/user-home-style.css">
     <title>User Homepage</title>
 </head>
 <body>
@@ -37,7 +37,7 @@ session_start();
                 <button class="options-button" id="changePassword">Change Password</button>
             </li>
             <li> 
-                <form action="./log-out.php" method="get">
+                <form action="../user-php/log-out.php" method="get">
                 <button type="submit" class="options-button">Log out</button>
                 </form>
             </li>
@@ -57,7 +57,7 @@ session_start();
     
 
     <div id="change-password-box">
-        <form action="./change-password.php" method="POST">
+        <form action="../user-php/change-password.php" method="POST">
         <button type="button" id="X-button-changePassword">X</button>
         <h1>Change Password</h1>
         <input type="password" name="oldPassword" id="oldPassword" placeholder="old password">
@@ -79,9 +79,9 @@ session_start();
     ?>
     </h1>
 
-    <script src="./user-script.js"></script>
-    <script src="./user-verify.js"></script>
-    <script src="./cards-script.js"></script>
-    <script src="./checkout-job.js"></script>
+    <script src="../user-scripts/user-script.js"></script>
+    <script src="../user-scripts/user-verify.js"></script>
+    <script src="../user-scripts/cards-script.js"></script>
+    <script src="../user-scripts/checkout-job.js"></script>
 </body>
 </html>

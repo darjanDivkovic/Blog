@@ -27,7 +27,7 @@
             }else{
                 // If User go to User homepage
                 $_SESSION['username'] = $username;
-                header('Location: ./user/user-home.php');
+                header('Location: ./user/user-php/user-home.php');
             }
            
         }

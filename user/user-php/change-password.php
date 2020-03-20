@@ -2,7 +2,7 @@
 
 session_start();
 
-require 'dbo.php';
+require '../../dbo.php';
 
 $username = $_SESSION['username'];
 
