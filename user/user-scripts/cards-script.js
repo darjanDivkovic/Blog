@@ -10,6 +10,7 @@ hr.onload = function() {
         let response = hr.response;
         let data = JSON.parse(response);
         
+        console.log(data);
         createCards(data);
 
 
@@ -25,7 +26,7 @@ function createCards(data){
 
     for(let i = 0 ; i < jobsCount ; i++){
 
-        
+        console.log(data[i].ID);
 
         let jobCard = document.createElement('div');
         jobCard.className = 'job-card';        
@@ -80,7 +81,8 @@ function createCards(data){
         button.location = data[i].location;
         button.salary = data[i].salary;
         button.time = data[i].time;
-        
+        button.lat = data[i].lat;
+        button.lon = data[i].lon;
         
         descriptionWrapperUpper.appendChild(heading1);
         descriptionWrapperUpper.appendChild(heading1Para);

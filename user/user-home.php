@@ -113,6 +113,6 @@ session_start();
     <script src="./user-scripts/user-verify.js"></script>
     <script src="./user-scripts/cards-script.js"></script>
     <script src="./user-scripts/checkout-job.js"></script>
-    <script src="./user-scripts/map-script.js"></script>
+    
 </body>
 </html>
