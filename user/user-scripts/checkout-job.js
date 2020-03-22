@@ -3,6 +3,8 @@ L.tileLayer('https://tile.jawg.io/jawg-dark/{z}/{x}/{y}.png?access-token=FocuBwi
 
 function checkOutJob(evt){
     
+
+    
     console.log(mymap);
     // Hide job cards
     hideJobCards();
@@ -19,10 +21,12 @@ function checkOutJob(evt){
    
     updateMap(mymap,lat,lon);
 
+    
+
     // Show job container
     setTimeout(showJobContainer, 1000);
 
-    
+    setTimeout(function () { mymap.invalidateSize(); }, 1000);
 }
 
 function hideJobCards(){  
@@ -40,6 +44,10 @@ $('#X-job-container').click(()=> {
 })
 
 function updateMap(mymap,lat,lon){
-   mymap.setView([lat, lon], 16);
+   
    L.marker([lat, lon]).addTo(mymap);
+   
+   mymap.setView([lat, lon], 16);
+   
+
 }

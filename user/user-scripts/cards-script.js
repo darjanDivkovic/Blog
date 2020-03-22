@@ -76,7 +76,7 @@ function createCards(data){
         let button = document.createElement('button');
         button.className = 'more';
         button.innerText = 'Check out';
-        button.addEventListener('click', checkOutJob, false);
+        button.addEventListener('click', checkOutJob);
         button.description = data[i].description;
         button.location = data[i].location;
         button.salary = data[i].salary;
