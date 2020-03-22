@@ -95,6 +95,8 @@ function createCards(data){
         
         cardsContainer.appendChild(jobCard);
 
+        
+
 }
 
 };
